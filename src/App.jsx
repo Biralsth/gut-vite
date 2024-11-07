@@ -1,8 +1,13 @@
 import { useState } from 'react'
+import Card from './components/Card'
+// import Navbar from './components/Navbar'
+// import Footer from './components/Footer'
 
 // import './App.css'
 
-const App = () => {
+const App = (props) => {
+
+  const user = "Shiro"
 
 
 
@@ -10,17 +15,14 @@ const App = () => {
 
   return (
     <>
-      <nav className=' py-5 px-10 flex items-center justify-between'>
-        <h2 className='text-2xl'>Gut</h2>
-        <div className='flex gap-8 item-center'>
-          <h3 className='text-xl'>About</h3>
-          <h3 className='text-xl'>Contact</h3>
-          <h3 className='text-xl'>Services</h3>
-          <h3 className='text-xl'>Account</h3>
-        </div>
-        {/* <div className="wow"></div> */}
-        {/* <div className="wow"></div> */}
-      </nav>
+      {/* <Navbar />
+      <Footer /> */}
+
+      <Card dog={user} />
+      <Card dog="hero" />
+
+
+
     </>
 
   )
